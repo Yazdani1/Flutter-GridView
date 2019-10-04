@@ -93,8 +93,29 @@ class _HomeState extends State<Home> {
         ),
       ),
       //end navigation drawer.
-
-      
+      body: new GridView.count(
+          crossAxisCount: 3,
+          children:List.generate(20, (index){
+            return new Card(
+              elevation: 10.0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0)
+              ),
+              child: new Container(
+                height: 50.0,
+                width: 50.0,
+                child: Align(
+                    child: new Text('$index',
+                    style: TextStyle(
+                      fontSize: 25.0
+                    ),
+                    ),
+                  alignment: Alignment.center,
+                ),
+              ),
+            );
+          })
+      ),
     );
   }
 }
