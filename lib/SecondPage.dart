@@ -106,11 +106,7 @@ class _SecondPageState extends State<SecondPage> {
               child: new Text("First One"),
             ),
           ),
-
-
-
-
-
+          
         ],
       ),
 

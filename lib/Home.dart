@@ -108,7 +108,6 @@ class _HomeState extends State<Home> {
                 width: 50.0,
                 child: Align(
                     child: new Text('$index',
-
                     ),
                   alignment: Alignment.center,
                 ),
