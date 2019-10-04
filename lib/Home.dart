@@ -94,9 +94,7 @@ class _HomeState extends State<Home> {
       ),
       //end navigation drawer.
 
-      body: new ,
-
-
+      
     );
   }
 }
