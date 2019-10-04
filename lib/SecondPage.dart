@@ -98,6 +98,7 @@ class _SecondPageState extends State<SecondPage> {
               child: new Text("First One"),
             ),
           ),
+          
           new Container(
             height: 100.0,
             width: 100.0,
@@ -106,7 +107,7 @@ class _SecondPageState extends State<SecondPage> {
               child: new Text("First One"),
             ),
           ),
-          
+
         ],
       ),
 
