@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'SecondPage.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -61,6 +62,7 @@ class _HomeState extends State<Home> {
               ),
               onTap: (){
                 Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (contex)=>SecondPage()));
               },
               leading: new Icon(Icons.add,size: 20.0,color: Colors.blueGrey,),
             ),
@@ -106,9 +108,7 @@ class _HomeState extends State<Home> {
                 width: 50.0,
                 child: Align(
                     child: new Text('$index',
-                    style: TextStyle(
-                      fontSize: 25.0
-                    ),
+
                     ),
                   alignment: Alignment.center,
                 ),
@@ -116,6 +116,7 @@ class _HomeState extends State<Home> {
             );
           })
       ),
+
     );
   }
 }
